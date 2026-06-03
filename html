@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harvey-Darcy Foundation - Affordable lawn care and home services in North Carolina">
+    <title>Harvey-Darcy Foundation | Get to Know Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        :root {
+            --tw-color-primary: #10b981;
+        }
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(92deg, #052e16 0%, #14532d 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <!-- NAVBAR -->
+    <nav class="bg-emerald-950 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-5">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-emerald-500 rounded-2xl flex items-center justify-center text-3xl shadow-inner">🌿</div>
+                    <h1 class="heading-font text-3xl tracking-tighter">Harvey-Darcy</h1>
+                    <span class="text-emerald-400 text-xl font-medium -ml-1">Foundation</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-lg font-medium">
+                    <a href="index.html" class="hover:text-emerald-400 transition-colors active">Home</a>
+                    <a href="prices.html" class="hover:text-emerald-400 transition-colors">Prices</a>
+                    <a href="contact.html" class="hover:text-emerald-400 transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-4xl leading-none focus:outline-none">
+                    &#9776;
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden pb-6 border-t border-emerald-900">
+                <div class="flex flex-col gap-y-4 pt-4 text-lg font-medium">
+                    <a href="index.html" class="hover:text-emerald-400 transition-colors py-2">Home / Get to Know Us</a>
+                    <a href="prices.html" class="hover:text-emerald-400 transition-colors py-2">Pricing</a>
+                    <a href="contact.html" class="hover:text-emerald-400 transition-colors py-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg text-white">
+        <div class="max-w-7xl mx-auto px-6 pt-20 pb-24 md:pb-32">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="inline-flex items-center gap-x-2 bg-white/20 backdrop-blur-md text-emerald-100 text-sm font-medium px-5 py-2 rounded-3xl mb-8">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    SERVING NORTH CAROLINA
+                </div>
+                <h1 class="heading-font text-6xl md:text-7xl font-semibold leading-none tracking-tighter mb-8">
+                    Get to know the<br>Harvey-Darcy Foundation
+                </h1>
+                <p class="text-2xl md:text-3xl text-emerald-100 max-w-lg mx-auto">
+                    Affordable lawn care. Community-first service. Your yard, our mission.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mt-12">
+                    <a href="prices.html" 
+                       class="bg-white text-emerald-950 hover:bg-emerald-100 font-semibold px-10 py-5 rounded-3xl text-xl transition-all flex items-center gap-x-3">
+                        See Our Prices
+                        <span class="text-3xl">→</span>
+                    </a>
+                    <a href="contact.html" 
+                       class="border-2 border-white/80 hover:border-white font-semibold px-10 py-5 rounded-3xl text-xl transition-all">
+                        Get a Quote Today
+                    </a>
+                </div>
+                <p class="mt-10 text-emerald-200 text-sm flex items-center justify-center gap-x-2">
+                    <span class="text-2xl">📍</span> 
+                    Charlotte, North Carolina • Family-owned &amp; operated
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- GET TO KNOW US SECTION -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <div class="inline-flex items-center bg-emerald-100 text-emerald-700 text-sm font-medium px-6 py-3 rounded-3xl mb-6">
+                    OUR STORY
+                </div>
+                <h2 class="heading-font text-5xl font-semibold tracking-tighter text-emerald-950 leading-none mb-8">
+                    Who we are and why we do what we do
+                </h2>
+                <div class="prose prose-lg text-slate-700 max-w-none">
+                    <p>The Harvey-Darcy Foundation was created with one simple goal: to make professional lawn care and home services accessible and affordable for every homeowner in North Carolina.</p>
+                    <p>We believe beautiful yards bring communities together. Whether you're a busy family, a senior on a fixed income, or just someone who wants their lawn to look its best without the hassle, we're here for you.</p>
+                    <p>Our team is fully insured, background-checked, and trained to deliver fast, clean results every single time. No contracts. No hidden fees. Just honest, quality service at prices that make sense.</p>
+                </div>
+                
+                <div class="mt-12 grid grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-emerald-600">100+</div>
+                        <div class="text-slate-500 text-sm mt-1">Lawns mowed monthly</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-emerald-600">5★</div>
+                        <div class="text-slate-500 text-sm mt-1">Average customer rating</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-emerald-600">NC</div>
+                        <div class="text-slate-500 text-sm mt-1">Proudly serving Charlotte &amp; beyond</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Visual side -->
+            <div class="md:col-span-5">
+                <div class="bg-white shadow-2xl rounded-3xl p-8 text-center">
+                    <div class="mx-auto w-40 h-40 bg-emerald-100 rounded-3xl flex items-center justify-center text-[120px] mb-6">🌳</div>
+                    <p class="font-medium text-emerald-950 text-xl">“We don’t just cut grass — we care for homes and neighborhoods.”</p>
+                    <p class="text-slate-400 mt-2">— Jack Darcy, Founder</p>
+                    
+                    <div class="mt-12 pt-8 border-t flex justify-between text-sm">
+                        <div class="flex items-center gap-x-2">
+                            <span class="text-emerald-500 text-2xl">✅</span>
+                            Fully Licensed
+                        </div>
+                        <div class="flex items-center gap-x-2">
+                            <span class="text-emerald-500 text-2xl">✅</span>
+                            Insured
+                        </div>
+                        <div class="flex items-center gap-x-2">
+                            <span class="text-emerald-500 text-2xl">✅</span>
+                            Local NC Team
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="bg-emerald-950 py-16 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-4xl heading-font font-semibold mb-12">What sets us apart</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-6">💰</div>
+                    <h3 class="text-2xl font-semibold mb-3">Transparent Pricing</h3>
+                    <p class="text-emerald-100">No surprises. Ever. Just fair rates that actually fit your budget.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-6">🌱</div>
+                    <h3 class="text-2xl font-semibold mb-3">Eco-Friendly Practices</h3>
+                    <p class="text-emerald-100">We use electric equipment and mulch clippings to keep your yard and our planet healthier.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-6">🤝</div>
+                    <h3 class="text-2xl font-semibold mb-3">Community First</h3>
+                    <p class="text-emerald-100">A portion of every job supports local food banks and youth programs across North Carolina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-8 h-8 bg-emerald-500 rounded-2xl flex items-center justify-center text-2xl">🌿</div>
+                    <div class="heading-font text-2xl text-white">Harvey-Darcy Foundation</div>
+                </div>
+                
+                <div class="flex gap-x-8 text-sm">
+                    <a href="index.html" class="hover:text-white">Home</a>
+                    <a href="prices.html" class="hover:text-white">Prices</a>
+                    <a href="contact.html" class="hover:text-white">Contact</a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-xs">&copy; 2026 Harvey-Darcy Foundation • All Rights Reserved</p>
+                    <p class="text-xs mt-1">Charlotte, NC • <a href="https://github.com/NCBlockCouncil/Harvey-Darcy-Foundation" target="_blank" class="hover:text-emerald-400">GitHub Repo</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind CDN initialization
+        function initializeTailwind() {
+            return {
+                config(userConfig = {}) {
+                    return {
+                        content: [],
+                        theme: {
+                            extend: {},
+                        },
+                        plugins: [],
+                        ...userConfig,
+                    }
+                },
+                theme: {
+                    extend: {},
+                },
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            return initializeTailwind()
+        })
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu')
+            menu.classList.toggle('hidden')
+        }
+        
+        console.log('%c✅ Harvey-Darcy Foundation website loaded successfully!', 'color:#10b981; font-family:Space Grotesk; font-size:13px')
+    </script>
+</body>
