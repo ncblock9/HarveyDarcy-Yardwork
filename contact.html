@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Harvey-Darcy Foundation for lawn care, car washes, window cleaning">
+    <title>Harvey-Darcy Foundation | Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <!-- NAVBAR (same as previous pages) -->
+    <nav class="bg-emerald-950 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-5">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-emerald-500 rounded-2xl flex items-center justify-center text-3xl shadow-inner">🌿</div>
+                    <h1 class="heading-font text-3xl tracking-tighter">Harvey-Darcy</h1>
+                    <span class="text-emerald-400 text-xl font-medium -ml-1">Foundation</span>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-8 text-lg font-medium">
+                    <a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a>
+                    <a href="prices.html" class="hover:text-emerald-400 transition-colors">Prices</a>
+                    <a href="contact.html" class="hover:text-emerald-400 transition-colors active">Contact</a>
+                </div>
+
+                <button onclick="toggleMobileMenu()" class="md:hidden text-4xl leading-none focus:outline-none">
+                    &#9776;
+                </button>
+            </div>
+
+            <div id="mobileMenu" class="hidden md:hidden pb-6 border-t border-emerald-900">
+                <div class="flex flex-col gap-y-4 pt-4 text-lg font-medium">
+                    <a href="index.html" class="hover:text-emerald-400 transition-colors py-2">Home / Get to Know Us</a>
+                    <a href="prices.html" class="hover:text-emerald-400 transition-colors py-2">Pricing</a>
+                    <a href="contact.html" class="hover:text-emerald-400 transition-colors py-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-12 gap-12">
+            <!-- Left column - Services & Info -->
+            <div class="md:col-span-7">
+                <h1 class="heading-font text-6xl font-semibold tracking-tighter text-emerald-950 leading-none">Contact Us</h1>
+                <p class="text-3xl text-emerald-700 mt-4">Additional services available</p>
+                
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-3xl p-8 flex gap-6 items-start">
+                        <div class="text-5xl">🚗</div>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Car Washes</h3>
+                            <p class="text-slate-600 mt-3">Interior &amp; exterior detailing starting at $25. Mobile service — we come to you!</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8 flex gap-6 items-start">
+                        <div class="text-5xl">🪟</div>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Window Cleaning</h3>
+                            <p class="text-slate-600 mt-3">Residential windows, screens, and tracks. Inside &amp; out — sparkling results guaranteed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 bg-emerald-50 rounded-3xl p-10">
+                    <h3 class="font-semibold text-xl mb-6">Ready to book?</h3>
+                    <div class="flex flex-col sm:flex-row gap-8">
+                        <a href="tel:7043450344" 
+                           class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white rounded-3xl py-8 px-8 text-center transition-all flex flex-col items-center">
+                            <span class="text-6xl mb-4">📞</span>
+                            <span class="text-4xl font-bold">(704) 345-0344</span>
+                            <span class="text-emerald-200 mt-1">Call or text anytime</span>
+                        </a>
+                        <a href="mailto:jack.m.darcy@gmail.com" 
+                           class="flex-1 bg-white hover:bg-slate-50 border-2 border-emerald-600 text-emerald-950 rounded-3xl py-8 px-8 text-center transition-all flex flex-col items-center">
+                            <span class="text-6xl mb-4">✉️</span>
+                            <span class="text-3xl font-semibold">jack.m.darcy@gmail.com</span>
+                            <span class="text-emerald-700 mt-1">Email us directly</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column - Quick form / message -->
+            <div class="md:col-span-5 bg-white rounded-3xl shadow-2xl p-10 flex flex-col">
+                <h2 class="text-3xl font-semibold mb-8">Tell us what you need</h2>
+                <p class="text-slate-500 mb-8">We respond same-day to every message. No job is too small!</p>
+                
+                <!-- Simple mailto form -->
+                <form action="mailto:jack.m.darcy@gmail.com" method="post" enctype="text/plain" class="flex-1 flex flex-col">
+                    <input type="text" name="name" placeholder="Your name" 
+                           class="w-full px-6 py-5 rounded-2xl border border-slate-200 focus:border-emerald-400 outline-none mb-4 text-lg">
+                    <input type="tel" name="phone" placeholder="Phone number (optional)" 
+                           class="w-full px-6 py-5 rounded-2xl border border-slate-200 focus:border-emerald-400 outline-none mb-4 text-lg">
+                    <textarea name="message" rows="6" placeholder="Tell us about your lawn, car wash, window cleaning, or any other service you need..." 
+                              class="w-full px-6 py-5 rounded-3xl border border-slate-200 focus:border-emerald-400 outline-none mb-8 resize-y text-lg"></textarea>
+                    
+                    <button type="submit"
+                            class="mt-auto bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xl py-6 rounded-3xl transition-all">
+                        Send Message → 
+                    </button>
+                </form>
+                <p class="text-xs text-slate-400 text-center mt-6">Opens your email app with pre-filled info</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER (same as previous pages) -->
+    <footer class="bg-slate-950 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-8 h-8 bg-emerald-500 rounded-2xl flex items-center justify-center text-2xl">🌿</div>
+                    <div class="heading-font text-2xl text-white">Harvey-Darcy Foundation</div>
+                </div>
+                
+                <div class="flex gap-x-8 text-sm">
+                    <a href="index.html" class="hover:text-white">Home</a>
+                    <a href="prices.html" class="hover:text-white">Prices</a>
+                    <a href="contact.html" class="hover:text-white">Contact</a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-xs">&copy; 2026 Harvey-Darcy Foundation • All Rights Reserved</p>
+                    <p class="text-xs mt-1">Charlotte, NC • <a href="https://github.com/NCBlockCouncil/Harvey-Darcy-Foundation" target="_blank" class="hover:text-emerald-400">GitHub Repo</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function initializeTailwind() {
+            return { config(userConfig = {}) { return { content: [], theme: { extend: {} }, plugins: [], ...userConfig } }, theme: { extend: {} } }
+        }
+        document.addEventListener('DOMContentLoaded', () => { return initializeTailwind() })
+        
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu')
+            menu.classList.toggle('hidden')
+        }
+    </script>
+</body>
+</html>
